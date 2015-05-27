@@ -1,0 +1,21 @@
+<providers>
+    <default-provider
+        class-name="org.apache.commons.vfs.provider.url.UrlFileProvider">
+    </default-provider>
+    <provider
+        class-name="org.apache.commons.vfs.provider.local.DefaultLocalFileProvider">
+        <scheme name="file" />
+    </provider>
+
+    <provider class-name="org.apache.commons.vfs.provider.jar.JarFileProvider">
+        <scheme name="jar" />
+        <scheme name="sar" />
+        <scheme name="ear" />
+        <scheme name="par" />
+        <scheme name="ejb3" />
+        <scheme name="war" />
+    </provider>
+
+    <extension-map extension="jar" scheme="jar" />
+
+</providers>
